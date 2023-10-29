@@ -12,13 +12,13 @@ const Login = () => {
         const form =event.target;
  const email=form.email.value;
  const password=form.password.value;
- console.log(name,email,password)
+ console.log(email,password)
  signin(email,password)
- .them(result =>{
+ .then(result =>{
   const user=result.user;
   console.log(user)
  })
- .them(error => console.log(error))
+ .then(error => console.log(error))
 
 
     }

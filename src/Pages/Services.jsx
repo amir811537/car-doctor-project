@@ -9,7 +9,7 @@ const [services,setServices]=useState([]);
 
 const getServices=async()=>{
 try {
-    const res=await axios.get('services.json');
+    const res=await axios.get('http://localhost:5000/services');
     setServices(res?.data);
 } catch (error) {
     console.log('error ',error)
